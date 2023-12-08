@@ -16,5 +16,10 @@ pipeline {
                 echo 'deploying the application...'
             }
         }
+        stage("QC") {
+            steps {
+                echo 'QC the application...'
+            }
+        }
     }
 }
